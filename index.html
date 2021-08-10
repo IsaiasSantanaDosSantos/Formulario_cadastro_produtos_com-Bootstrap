@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JavaScript BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <!-- JavaScript local-->
+    <script src="js/script.js" defer></script>
+    <title>Tarefa 3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center m-4">
+            <div class="col-10">
+                <form class="row g-2">
+                    <h2>Cadastro de produtos</h2>
+                    <div class="col-md-12">
+                        <label for="desc-produto" class="form-label">Descrição produto:</label>
+                        <input type="text" class="form-control" id="desc-produto" placeholder="Descreva o produto" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="marca" class="form-label">Marca:</label>
+                        <input type="text" class="form-control" id="marca" placeholder="Digite a marca" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="peso/ml" class="form-label">Peso / litro:</label>
+                        <input type="number" class="form-control" id="peso-lt" placeholder="kg ou lt" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="embalagem" class="form-label">Tipo de embalagem:</label>
+                        <select name="embalagem" id="embalagem">
+                            <option selected>Escolha...</option>
+                            <option value="1">Pacote</option>
+                            <option value="2">Lata</option>
+                            <option value="3">Tetrapack</option>
+                            <option value="4">Pote</option>
+                            <option value="5">Vidro</option>
+                            <option value="6">Emb. papel</option>
+                        </select>
+                    </div>
+                    <div class="col-md-7">
+                        <label for="validade" class="form-label">Validade:</label>
+                        <input type="date" class="form-control" id="validade">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lote" class="form-label">Lote do produto:</label>
+                        <input type="text" class="form-control" id="lote" placeholder="Digite o lote" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="categoria" class="form-label">Categoria:</label>
+                        <select name="categoria" id="categoria">
+                            <option selected>Escolha...</option>
+                            <option value="1">Alimentação</option>
+                            <option value="2">Higiêni</option>
+                            <option value="3">Limpeza</option>
+                            <option value="4">Bazar</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="setor" class="form-label">Setor:</label>
+                        <select name="setor" id="setor" class="">
+                            <option selected>Escolha...</option>
+                            <option value="1">Mercearia</option>
+                            <option value="2">Bebidas</option>
+                            <option value="3">Horti fruti</option>
+                            <option value="4">Massas</option>
+                            <option value="5">Perecíveis</option>
+                            <option value="6">Bomboniere</option>
+                            <option value="7">Laticínios</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="fornecedor" class="form-label">Nome do fornecedor:</label>
+                        <input type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="preco-custo" class="form-label">Preço de custo:</label>
+                        <div class="input-group">
+                            <span class="input-group-text">R$</span>
+                            <input type="number" class="form-control" placeholder="Preço custo" required minlength="3">
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <label for="preco-custo" class="form-label">Preço de venda:</label>
+                        <div class="input-group">
+                            <span class="input-group-text">R$</span>
+                            <input type="number" class="form-control" placeholder="Preço venda" required minlength="3">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="checkbox">
+                        <label for="estoque" class="form-check-label">Há o produto em estoque?</label>
+                    </div>
+                    <div class="col-12" id="btn">
+                        <input type="submit" class="btn btn-danger" value="Cadastrar" id="cadastrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

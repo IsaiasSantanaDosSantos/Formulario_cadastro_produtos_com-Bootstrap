@@ -1,0 +1,16 @@
+body {
+    background-image: url('https://cdn.vox-cdn.com/thumbor/J5cB63rWblRc0b3sIuplAunioDQ=/0x0:6016x4016/1200x800/filters:focal(2527x1527:3489x2489)/cdn.vox-cdn.com/uploads/chorus_image/image/66576102/shutterstock_182694926.0.jpg');
+    background-size: cover;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+}
+
+#btn {
+    text-align: center;
+}
